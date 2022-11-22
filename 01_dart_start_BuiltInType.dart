@@ -1,5 +1,5 @@
 import 'dart:core';
-import 'package:characters/characters.dart';
+
 
 //Numbers
 void Numbers()
@@ -172,8 +172,6 @@ assert(list5.length == 4);
 var list6 = [0, ...?list4];
 assert(list6.length == 1);
 
-var nav = ['Home', 'Furniture', 'Plants', if (promoActive) 'Outlet'];
-
 var listOfInts = [1, 2, 3];
 var listOfStrings = ['#0', for (var i in listOfInts) '#$i'];
 assert(listOfStrings[1] == '#1');
@@ -263,15 +261,14 @@ void Runes()
   var hi = 'Hi 🇩🇰';
   print(hi);
   print('The end of the string: ${hi.substring(hi.length - 1)}');
-  print('The last character: ${hi.characters.last}');
 }
 
 
 //Symbols
 void Symbols()
 {
-#radix;
-#bar;
+ var s= "Morning";
+ print(#s);
 }
 
 void main()
